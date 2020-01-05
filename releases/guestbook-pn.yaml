@@ -7,7 +7,7 @@ spec:
   source:
     repoURL: https://github.com/pnowy/argocd-example-apps.git
     targetRevision: HEAD
-    path: releases
+    path: guestbook
   destination:
     server: https://kubernetes.default.svc
     namespace: default
