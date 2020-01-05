@@ -1,0 +1,13 @@
+kind: Application
+metadata:
+  name: guestbook-pn
+  namespace: default
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/pnowy/argocd-example-apps.git
+    targetRevision: HEAD
+    path: releases
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
